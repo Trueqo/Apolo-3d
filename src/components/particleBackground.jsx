@@ -4,7 +4,7 @@ import ParticleConfig from "../config/ParticleConfig";
 
 export default function ParticleBackground(){
     return(
-        <div className="z-0 relative">
+        <div className="absolute z-0 ">
             <Particles className="z-0" params={ParticleConfig}></Particles>
         </div>
     );

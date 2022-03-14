@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.contHome{
+
+    display: grid;
+    grid-template: 
+        "header     header" auto
+        "categorias categorias" auto
+        "wellcome   carrusel"  auto
+        "footer     footer" 5.5rem /
+        auto        auto;
+
+}
+
+
+
+@media (max-width:768px) {
+
+    .contHome{
+
+        display: grid;
+        grid-template: 
+            "header"     auto
+            "categorias" auto
+            "wellcome"   auto
+            "footer"     auto;
+            
+    
+    }
+
+    .wellcome{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    
+}

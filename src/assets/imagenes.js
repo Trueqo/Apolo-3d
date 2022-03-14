@@ -2,10 +2,11 @@
 import Luna from './img/Luna.png';
 
 
-    export default
-        {
+    export default [
+            {
             "img1": Luna,
-            "img2": Luna 
+            "tipo": "Lamparas",
+            "valor": 35000
         }
     
-
+    ]

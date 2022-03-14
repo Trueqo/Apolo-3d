@@ -4,7 +4,7 @@ import {faWhatsapp} from '@fortawesome/free-brands-svg-icons'
 import {faInstagram} from '@fortawesome/free-brands-svg-icons'
 const Footer = () => {
     return (
-        <div className='absolute flex bottom-0 bg-orange-500 h-20 w-full items-center text-4xl
+        <div className='flex bg-orange-700  h-full w-full items-center text-4xl
         justify-between'>
             <span className='text-white ml-10' >
                 Contacto

@@ -1,18 +1,24 @@
+import { useState } from "react";
+import { Outlet } from "react-router-dom";
 import "./App.css";
-import Categorias from "./components/Categorias";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import ParticleBackground from "./components/particleBackground";
+import Context from "./hooks/Context";
+import item from "../src/assets/item"
 
+// import ParticleBackground from "./components/particleBackground";
 
 function App() {
+
+  const[data,setData] = useState(item)
+
+
   return (
-    <div className="">
-      <Header/>
-      <ParticleBackground/>
-      <Categorias/>
-      <Footer/>
-    </div>
+    <Context.Provider value={{data,setData}} className="">
+
+        {/* <ParticleBackground/> */}
+            
+        <Outlet/>
+        
+    </Context.Provider>
   );
 }
 
